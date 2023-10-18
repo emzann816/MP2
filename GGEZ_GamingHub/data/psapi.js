@@ -1,6 +1,6 @@
 [
     {   "id" : "1" ,
-        "product" : "PS5 Console with 2 Two DualSense Controller ",
+        "product" : "PS5 Console Controller",
         "price" : "32999",
         "category" : "Playstation5",
         "img" : "images/ps5_1.jpg",

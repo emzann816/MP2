@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGEZ! Gaming Hub</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-lg-top">
+        <div class="container-fluid">
+            <img src="logo.png" width="50px">
+            <a class="nav-link link-info" href="about.html"><h5>GGEZ! Gaming Hub</h5></a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-dark"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- <div class="hori-selector"><div class="left"></div><div class="right"></div></div> -->
+                <li class="nav-item">
+                    <a class="nav-link link-info text-light" href="index.html"><i class="fas fa-home "></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-info text-light" href="about.html"><i class="fa fa-info-circle "></i>About Us</a>
+                </li>
+                <li class="nav-item nav_item">
+                  <a class="nav-link link-info text-light" aria-current="page" href="myorder.html">My Order</a>
+                </li>
+                <li class="nav-item nav_item">
+                    <a class="nav-link link-info text-light" aria-current="page" href="catalogue.html">Shop</a>
+                  </li>
+                
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse right" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto">
+                    <div class="search-con">
+                        <input type="search" class="form-control search" id="search" name="search"
+                            placeholder="Search...">
+                    </div>
+                </div>
+            </ul>
+             
+            <ul class="navbar-nav">
+                <li class="nav-item nav_item text-light me-sm-3"><a class="nav-item"><i class="fa-solid fa-user loginBtn " onclick="loginBtn()"></i></a><span id="loginName"></span></li>
+                <li class="nav-item nav_item text-light me-sm-3 text-decoration-none"><a href="checkout.html" class="nav-item text-light me-sm-3 text-decoration-none"><i class="fa-solid fa-cart-shopping cartBtn text-primary"></i><span id="quantity">0</span></i></a></li>
+                <li class="nav-item nav_item "><span id="logoutBtn"></span></li>
+             </ul>
+        </div>
+        </div>
+    </nav>
+    <center><section class="sticky-lg-top z-1 bg-white shadow-card md:shadow-none text-left bg-light">
+        <div class="5xl:mx-auto 5xl:max-w-7xl 3xl:mx-auto 3xl:max-w-6xl xl:mx-auto xl:max-w-5xl lg:mx-auto lg:max-w-4xl md:mx-auto md:max-w-2xl max-w-full">
+            <div class="relative flex  items-center after:absolute "><br>
+                <path d="m8.125 9 3.88 3.88L15.885 9a.996.996 0 1 1 1.41 1.41L12.705 15a.996.996 0 0 1-1.41 0l-4.59-4.59a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0Z" fill="#BEBEBE"></path>
+                <div id="scrollspy" class="flex h-full flex-1 select-none overflow-x-auto scroll-smooth whitespace-nowrap scrollbar-hide">
+                    <b><a data-key="Playstation5" class="category flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green">PS5</a></b>
+                    <b><a data-key="Playstation4"  class="category flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green">PS4</a></b>
+                    <b><a data-key="Nintendo Switch"  class="category flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" >NSW</a></b>
+                    <b><a data-key="XBOX" class="category flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark   text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" >XBOX</a></b>
+                    <b><a data-key="PC Mac" class="category flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" >PC/Mac</a></b>
+                    <b><a data-key="Accessories" class="category flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" >Accessories</a></b>
+                    <b><a data-key="Digital Store" class="category flex h-full items-center link-danger  border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" >Digital Store</a></b>
+                    <b><a  data-key="Iphones" class="category flex h-full items-center link-danger border-b-[3px] border-transparent text-dark  text-decoration-none px-4 text-sm font-semibold text-dark-charcoal hover:text-green" >Iphones</a></div></b>
+                    </path></div></div>
+                    <br>
+
+    </section></center>
+    <div class="container" style="margin-top: 40px;">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="//ecommerce.datablitz.com.ph/cdn/shop/collections/ps5_1500x.png?v=1608263405 1500w" class="img-fluid w-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                    <img src="//ecommerce.datablitz.com.ph/cdn/shop/collections/ps4_1500x.png?v=1608262956 1500w" class="img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//ecommerce.datablitz.com.ph/cdn/shop/collections/nsw_headerbanner_fc3d54af-60c6-4cdc-bda7-73f3378542e8_1500x.png?v=1599806234 1500w" class="img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//ecommerce.datablitz.com.ph/cdn/shop/collections/xbox-series-x-datablitz_1500x.png?v=1676923485 1500w" class="img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//ecommerce.datablitz.com.ph/cdn/shop/collections/pc_1500x.png?v=1676592095 1500w" class="img-fluid w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/8e/f7/26/8ef726ffe903afa19aa545e23f3b9c72.jpg" class="img-fluid" style="height:235px; width:1200px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//digital.datablitz.com.ph/cdn/shop/files/roblox_banner_home_2048x.jpg?" class="img-fluid" style="height:235px; width:1200px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//digital.datablitz.com.ph/cdn/shop/files/steam_home_banner_add70e43-f446-4565-bb13-a5ca4346e1ae_2048x.jpg?v=1641257632 2048w" class="img-fluid" style="height:235px; width:1200px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//digital.datablitz.com.ph/cdn/shop/files/xbox_banner_home_2048x.jpg?v=1660298622 2048w" class="img-fluid" style="height:235px; width:1200px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//digital.datablitz.com.ph/cdn/shop/files/eshop_banner_5a14bcf0-0204-47fa-bcb2-7be701266df3_2048x.png?v=1614777091 2048w" class="img-fluid" style="height:235px; width:1200px;" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="//digital.datablitz.com.ph/cdn/shop/files/PSN_banner_home_b8abebb2-95ca-40bf-80d7-305082b13bdb_2048x.jpg?v=1660298593 2048w" class="img-fluid" style="height:235px; width:1200px;" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <h1 class="col text-center mt-1 text-light fw-bolder" id="catalogueTitle"></h1>
+            <p class="catalogueQuotes text-center text-light ">"Every Gamer Needs"</p>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div id="cards" class="col-sm col-md col-md-12 mt-3">
+                <!-- area where cards be placed -->
+            </div>
+        </div>   
+
+        </div>
+        <div class="ads-container container mt-5 mb-4 rounded-top-3">
+            <div class="col-lg-12 col-sm-12 cardStyling" >
+                <h5 class="text-primary-emphasis text-center fw-bold border-black border-1 py-lg-3"> Paid Advertisement:</h5>
+                <center><table>
+                <tr>
+                <th class="mb-5 align-content-center"><img src="https://images.indianexpress.com/2023/09/iphone-15-pro-max-action-button.gif" alt="Advertisement" class="ads rounded-2 border-light border-3" style="width: 200px;"></th>
+                <th class="px-3 mb-5 align-content-center"><img src="https://static.ffx.io/images/$zoom_2.211%2C$multiply_0.7252%2C$ratio_1.776846%2C$width_1059%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/7a5cdb5f74325cd566a249534b28fb67098597a0" alt="Advertisement GIF" class="ads rounded-2 border-light border-3" style="width: 200px;"> </th>
+                <th class="px-3 mb-5 align-content-center"><img src="https://i.pinimg.com/originals/2b/42/c7/2b42c7aae9f667a439943241e94c8ff6.gif" alt="Advertisement GIF" class="ads rounded-2 border-light border-3" style="width: 200px; height: 115px;"> </th>
+                <th class="px-3 mb-5 align-content-center"><img src="https://cdn.myportfolio.com/198b51d4-a4bb-4369-90b0-0e8d065e6e1c/12efd514-904d-4729-ab52-04a220159356_car_202x158.gif?h=18905e1483bc01bfd3d5c6c159c5e6c2" alt="Advertisement GIF" class="ads rounded-2 border-light border-3" style="width: 200px; height: 115px;"> </th>
+                <th class="px-3 mb-5 align-content-center"><img src="https://media.tenor.com/QSjzmLw-FlkAAAAC/xbox-series-x-xbox.gif" class="ads rounded-2 border-light border-3" style="width: 200px; height: 115px;"> </th>
+            </tr> 
+            </table></center>
+            </div>
+            <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+         
+            <!-- footer -->
+            <footer class="unique-footer">
+              <div class="footer-content">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                          <div class="row" style="margin-top: 10px;">
+                              <div class="col-md-12">
+                                  <img src="logo.png" style="height: 250px;">
+                              </div>
+                          </div>
+
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                          <div class="row" style="margin-top: 10px;">
+                              <div class="col-md-12">
+                                  <h3 class="text-light"><label>About Us</label></h3>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="contact-info text-light">
+                                      <p>Email: jonservices17@email.com </p>
+                                      <p>Email 2: semilieann@email.com </p>
+                                      <p>Phone: (123) 456-7890</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                          <div class="row" style="margin-top: 10px;">
+                              <div class="col-md-12">
+                                  <h3 class="text-light"><label>Community</label></h3>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="community-links text-light">
+                                      <ul>
+                                          <li>
+                                              <a href="#"><label>Home</label></a>
+                                          </li>
+                                          <li>
+                                              <a href="#"><label>Game Invites</label></a>
+                                          </li>
+                                          <li>
+                                              <a href="#"><label>Events</label></a>
+                                          </li>
+                                          <li>
+                                              <a href="#"><label>Services</label></a>
+                                          </li>
+                                          <li>
+                                              <a href="#"><label>Channel</label></a>
+                                          </li>
+
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                          <div class="row" style="margin-top: 10px;">
+                              <div class="col-md-12">
+                                  <h3 class="text-light"><label>Links</label></h3>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="social-links text-light">
+                                      <a href="https://youtu.be/iik25wqIuFo"><img src="facebook.png"
+                                              alt="Facebook" title="Facebook"></a>
+                                      <a href="https://youtu.be/iik25wqIuFo"><img src="twitter.png" alt="Twitter"
+                                              title="Twitter"></a>
+                                      <a href="https://youtu.be/iik25wqIuFo"><img src="instagram.png"
+                                              alt="Instagram" title="Instagram"></a>
+                                      <a href="https://discord.gg/RV6xu6rZ"><img src="discord.png" alt="Discord"
+                                              title="Discord"></a>
+                                      <a href="https://www.twitch.tv/echanqwq"><img src="twitch.png" alt="Twitch"
+                                              title="Twitch"></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <div class="copyright">
+                          <p class="text-light">&copy; 2023 Kodego WD83P. All rights reserved.</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+          <!-- end of foots -->
+
+    <script src="assets/js/catalogue.js"></script> 
+
+    <script src="assets/js/about.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

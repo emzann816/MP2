@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GGEZ! Gaming Hub </title>
+        <link rel="icon" type="image" href="logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-lg-top">
+            <div class="container-fluid">
+                <img src="logo.png" width="50px">
+                <a class="nav-link link-info" href="about.html"><h5>GGEZ! Gaming Hub</h5></a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- <div class="hori-selector"><div class="left"></div><div class="right"></div></div> -->
+                    <li class="nav-item">
+                        <a class="nav-link link-info" href="index.html"><i class="fas fa-home "></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-info" href="about.html"><i class="fa fa-info-circle "></i>About Us</a>
+                    </li>
+                    <li class="nav-item nav_item">
+                      <a class="nav-link link-info" aria-current="page" href="myorder.html">My Order</a>
+                    </li>
+                    <li class="nav-item nav_item">
+                      <a class="nav-link link-info" aria-current="page" href="catalogue.html">Shop</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse right" id="navbarSupportedContent1">
+                <ul class="navbar-nav ml-auto">
+                        <div class="search-con">
+                            <input type="search" class="form-control search" id="search" name="search"
+                                placeholder="Search...">
+                        </div>
+                    </div>
+                </ul>
+                 
+                <ul class="navbar-nav">
+                    <li class="nav-item nav_item text-light me-sm-3"><a class="nav-item"><i class="fa-solid fa-user loginBtn " onclick="loginBtn()"></i></a><span id="loginName"></span></li>
+                    <li class="nav-item nav_item text-light me-sm-3 text-decoration-none"><a href="checkout.html" class="nav-item text-light me-sm-3 text-decoration-none"><i class="fa-solid fa-cart-shopping cartBtn text-primary"></i><span id="quantity">0</span></i></a></li>
+                    <li class="nav-item nav_item "><i class="fa fa-log"></i><span id="logoutBtn"></span></li>
+                 </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="container-fluid" style="margin-top: 40px;">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Endless-Dungeon_ECOM-PRE-ORDER-BANNER.webp" class="img-fluid h-25" alt="..." >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/paradise-killer-ecom-main.webp" class="img-fluid h-25" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/sonic-superstars-main-mini-banner.webp" class="img-fluid h-25" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/narutoxboruto-ecom.webp" class="img-fluid h-25" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <br><br>
+        <div class="container-fluid mb-4 ">
+            
+            <center><table style="width: 90%; data-mce-width: 90%" class="align-content-center p-3">
+            <div class="card d-inline-block ms-2" >
+            <img src="images/0197105010949_1024x.webp" alt="" class="img-fluid image-brand rounded-3 mb-3 shadow-sm h-25">
+            </div>
+            <div class="card d-inline-block ms-2" >
+        <img src="images/1_81009fba-c6d5-432f-9f18-678f6450b624_800x.webp" alt="" class="img-fluid image-brand rounded-3 mb-3 shadow-sm h-25">
+    </div>
+    <div class="card d-inline-block ms-2" >
+        <img src="images/Victus-35AX_main-img_1024x.webp" alt="" class="img-fluid image-brand rounded-3 shadow-sm  mb-3 h-25">
+    </div>
+    <div class="card d-inline-block ms-2" >
+        <img src="images/rytrutuuii_424ac9e5-ff86-4362-b7bc-d7f2901e6b98_800x.webp" alt="" class="img-fluid image-brand rounded-3 shadow-sm mb-3 h-25">
+    </div>
+    <div class="card d-inline-block ms-2" >
+        <img src="images/Blitze-Commerce-07_1024x.webp" alt="" class="img-fluid image-brand rounded-3 shadow-sm mb-3 h-25">
+    </div>
+</table></center>
+        </div>
+    <div class="container-fluid mb-1 col-md-12 ms-2 ">
+       <div class="table-wrapper">
+        <center><table style="width: 90%; data-mce-width: 90%" class="align-content-center">
+            <tbody>
+                <tr>
+                    <th class="p-2 pb-4 mt-4">
+                        <div style="text-align: start;" data-mce-style="text-align: start;"><a href="#"><img alt="" src="https://cdn.shopify.com/s/files/1/0355/8296/7943/files/iphone15ecom_1.jpg?v=1697193719" style="height: 150px; width: 600px; border-radius: 20px;" class="img-fluid ms-2"></a></div> 
+                    </th>
+            
+                    <th class="p-2 pb-4 mt-4">
+                        <div style="text-align: start;" data-mce-style="text-align: start;"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0355/8296/7943/files/STRAY_ECOM-PRE-ORDER-BANNER.jpg?v=1697025509" alt="" style="height: 150px; width: 600px; border-radius: 20px;" class="img-fluid ms-2"></a></div>
+                    </th>
+                </tr> 
+            <tr>
+                <td class="p-2 pb-4 mt-4">
+                    <div style="text-align: start;" data-mce-style="text-align: start;"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0355/8296/7943/files/SPIDERMAN-CONSOLE_ECOM-PRE-ORDER-BANNER_90f4ce38-26ec-4a1d-9ca2-8db3575b0837.jpg?v=1690527281" alt="" style="height: 150px; width: 600px; border-radius: 20px;" class="img-fluid ms-2"></a></div>
+                </td>
+                
+                <td class="p-2 pb-4 mt-4">
+                    <div style="text-align: start;" data-mce-style="text-align: start;"><a href="#"><img src="https://cdn.shopify.com/s/files/1/0355/8296/7943/files/Spirder_ECOM-PRE-ORDER-BANNER.jpg?v=1690594496" alt=""style="height: 150px; width: 600px; border-radius: 20px;" class="img-fluid ms-2"></a></div>
+                </td>
+            </tr>
+           
+        
+
+</tbody>
+</center></table>
+       </div>
+        <div class="container-fluid mb-4 ">
+
+            
+      <section class="service text-light">
+
+          <ul class="service-list" class="change-my-color">
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-1.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content col-12">
+                <p class="service-item-title fw-bolder">Fast Shipping Nationwide</p>
+
+                <p class="service-item-text justify-content-center pb-1">Ships in 24 hours! Express and Same-Day Delivery </p>
+                
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-2.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title fw-bolder">Easy Returns</p>
+
+                <p class="service-item-text">Enjoy 30 Day Returns Policy</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-3.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title fw-bolder">100% Safe and Secure</p>
+
+                <p class="service-item-text">All Transactions are Fully Encrypted!</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-item-icon">
+                <img src="./assets/images/service-icon-4.svg" alt="Service icon">
+              </div>
+
+              <div class="service-content">
+                <p class="service-item-title">Special Support</p>
+
+                <p class="service-item-text">24/7 Dedicated Support for Chat & Email</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <div class="container-fluid mb-4 mt-5">
+        <h3 class="fw-bolder text-light"> Hot Picks</h3>
+
+         <center><table style="width: 90%; data-mce-width: 90%" class="align-content-center p-3">
+            <div class="card2 d-inline-block ms-2" >
+            <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/assassin_s-creed-mirage_300x.jpg?v=1696832472 300w" alt="" class="img-fluid image-brand rounded-3 mb-3 shadow-sm h-25">
+            </div>
+            <div class="card2 d-inline-block ms-2" >
+        <img src="//ecommerce.datablitz.com.ph/cdn/shop/collections/2k24x800_300x.jpg?v=1694138826 300w" alt="" class="img-fluid image-brand rounded-3 mb-3 shadow-sm h-25">
+    </div>
+    <div class="card2 d-inline-block ms-2" >
+        <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/FFXVI_PXP_300x.jpg?v=1687414678 300w" alt="" class="img-fluid image-brand rounded-3 shadow-sm  mb-3 h-25">
+    </div>
+    <div class="card2 d-inline-block ms-2" >
+        <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/HOTPICKS_DiabloIV_d956131b-506b-4931-9f1b-229c3f949eb1_300x.jpg?v=1686043225 300w" alt="" class="img-fluid image-brand rounded-3 shadow-sm mb-3 h-25">
+    </div>
+    <div class="card2 d-inline-block ms-2" >
+        <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/HOTPICKS_StreetFighter_300x.jpg?v=1685944637 300w" alt="" class="img-fluid image-brand rounded-3 shadow-sm mb-3 h-25">
+    </div>
+</table></center>
+        </div>
+        <div class="container-fluid mb-4 mt-5">
+            <h3 class="fw-bolder text-light"> Best Seller</h3>
+            <center><table style="width: 90%; data-mce-width: 90%" class="align-content-center p-3">
+                <div class="card2 d-inline-block ms-2" >
+                <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/new-dobe_800x.jpg?v=1664791501 800w" alt="" class="img-fluid image-brand rounded-3 mb-3 shadow-sm h-100">
+                </div>
+                <div class="card2 d-inline-block ms-2" >
+            <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/new-Hori_800x.jpg?v=1664791508 800w," alt="" class="img-fluid image-brand rounded-3 mb-3 shadow-sm h-25">
+        </div>
+        <div class="card2 d-inline-block ms-2" >
+            <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/Datablitz_gulikit_800x.jpg?v=1665388896 800w" alt="" class="img-fluid image-brand rounded-3 shadow-sm  mb-3 h-25">
+        </div>
+        <div class="card2 d-inline-block ms-2" >
+            <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/GAMESIR_800x.jpg?v=1664524507 800w" alt="" class="img-fluid image-brand rounded-3 shadow-sm mb-3 h-25">
+        </div>
+        <div class="card2 d-inline-block ms-2" >
+            <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/Datablitz_8bitdo_800x.jpg?v=1665388941 800w" alt="" class="img-fluid image-brand rounded-3 shadow-sm mb-3 h-25">
+        </div>
+    </table></center>
+            </div>
+
+            <!-- about -->
+
+            <div class="container-fluid text-center">
+                <div class="container bg-light rounded-3 pb-3">
+            <section id="owner" class="owner-section-padding p-4">
+                <div class="container" style="border-radius: 5px;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <div class="about-img pt-3">
+                                <img src="bro-fist.jpg " alt="" class="img-fluid rounded-3 shadow-sm" >
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 p-2">
+                            <div class="about-text2">
+                                
+                                <br>
+                                <h3 class="text-start text-dark ">Gamers Helping Gamers</h3>
+                                <p class="text-start text-dark">At GGEZ! Gaming Hub, we understand the value of shared gaming experiences. Our platform is
+                                    designed to
+                                    help you seamlessly organize and join gaming sessions, ensuring you never miss out on epic
+                                    battles,
+                                    intense strategy sessions, or hilarious in-game moments.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </section>
+    
+    <!-- cards -->
+     <!-- cards -->
+           <center> <section id="products" class="section-p1">
+                <h2 class="text-light fw-bolder pt-5">Our Community </h2>
+                <p class="text-light">Explore the world of gamers!</p>
+           <div class="container-fluid">
+            <div class="wrapper d-inline-flex m-1">
+              <div class="single-card bg-primary">
+                  <div class="img-area bg-dark">
+                    <img src="images/Gaming-Lounge-1024x554.jpg" alt="" class="w-100" style="background-position: ;">
+                    <div class="overlay">
+                      
+                    </div>
+                  </div>
+                  <div>
+                    <h4 class="text-light pt-2  ps-3" style="font-size:20px;">Gaming Lounge</h4>
+                    <div class="rate">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-light"></i>
+                    </div>
+                    <p class="text-light pt-2 ps-3 justify-content-center" style=" font-weight: lighter;">Look no further! GGEZ! Gaming Hub is your ultimate destination for connecting,
+                        coordinating.</p>
+                  </div>
+                </div>
+            <div class="wrapper d-inline-flex m-1">
+            <div class="single-card bg-primary">
+                <div class="img-area bg-dark">
+                  <img src="images/P1179802_AN-Select_edit-scaled.jpg" alt="">
+                  <div class="overlay">
+                   
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-light pt-2 ps-3" style="font-size:20px;">Be Part of our Team!</h4>
+                  <div class="rate">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <p class="text-light pt-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+              </div>
+              <div class="wrapper d-inline-flex m-1">
+              <div class="single-card bg-primary">
+                <div class="img-area bg-dark">
+                  <img src="images/game-room-decor-ideas.webp" alt="">
+                  <div class="overlay">
+                    
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-light pt-2 ps-3" style="font-size:20px;">WFH Lounge </h4>
+                  <div class="rate">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <p class="text-light pt-2 pb-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper d-inline-flex m-1">
+            <div class="single-card bg-primary">
+                <div class="img-area bg-dark">
+                  <img src="images/ella-don-LB0kKgf8Vrc-unsplash_1_1.webp" alt="">
+                  <div class="overlay">
+                   
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-light pt-2  ps-3" style="font-size:20px;">Why Customer Loves It</h4>
+                  <div class="rate">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                  </div>
+                  <p class="text-light pt-2 ps-3" style=" font-weight: lighter;">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <hr>
+    </section></center>
+    <!-- end of cards -->
+
+    <section>
+    <div class="container-fluid">
+        <center><table style="width: 90%; data-mce-width: 100%" class="align-content-center ">
+            <div class="single-card-1 d-inline-block ms-2">
+            <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/Datablitz_playseat_400x.jpg?v=1665412607 400w">
+            <button class="text-decoration-none btn-bg-primary">Shop Now!</button>   
+        </div>
+            <div class="single-card-1 d-inline-block ms-2">
+                <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/Datablitz_honeycomb_3f325966-1c2c-4319-bdec-72a8d6d9e4c6_400x.jpg?v=1693482669 400w">
+                <button class="text-decoration-none btn-bg-primary">Shop Now!</button>   
+            </div>
+            <div class="single-card-1 d-inline-block ms-2">
+                    <img src="//ecommerce.datablitz.com.ph/cdn/shop/files/Akko_a62c9092-c06a-4093-bf75-435d55e790fb_400x.jpg?v=1693482703 400w">
+                    <button class="text-decoration-none btn-bg-primary">Shop Now!</button>    
+                </div>
+            </div>
+        </table> </center>
+            </div>
+            </section>
+
+    <!-- end of owner -->
+    <!-- contact -->
+    <hr>
+    <div class="container">
+        <section id="contact" class="contact section-padding">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2 class="fw-bolder">Contact Us</h2>
+                        <p c>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row m-1 ">
+                        <center> <div class="col-md-9 ">
+                            <div class="mb-3 ">
+                                <input type="text" class="form-control text-center" required placeholder="Your Full Name">
+                            </div></center>
+                        </div>
+                        <center><div class="col-md-9">
+                            <div class="mb-3">
+                                <input type="email" class="form-control text-center" required placeholder="Your Email">
+                            </div></center>
+                        </div>
+                        <center><div class="col-md-9">
+                            <div class="mb-3">
+                                <textarea rows="3" required class="form-control text-center"
+                                    placeholder="Your Query Here"></textarea>
+                            </div></center>
+                            <center><button class="btn btn-info btn-lg btn-block mt-3 w-25 ">Send Now</button></center>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- end of contacts -->
+    <!-- footer -->
+    <hr>
+    <footer class="unique-footer">
+        <div class="footer-content">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-12">
+                            <img src="logo.png" style="height: 250px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-12">
+                            <h3 class="text-light"><label>About Us</label></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-info text-light">
+                                <p>Email: jonservices17@email.com </p>
+                                <p>Email 2: semilieann@email.com </p>
+                                <p>Phone: (123) 456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-12">
+                            <h3 class="text-light"><label>Community</label></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="community-links text-light">
+                                <ul>
+                                    <li>
+                                        <a href="#"><label>Home</label></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><label>Game Invites</label></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><label>Events</label></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><label>Services</label></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><label>Channel</label></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="row" style="margin-top: 10px;">
+                        <div class="col-md-12">
+                            <h3 class="text-light"><label>Links</label></h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="social-links text-light">
+                                <a href="https://youtu.be/iik25wqIuFo"><img src="facebook.png"
+                                        alt="Facebook" title="Facebook"></a>
+                                <a href="https://youtu.be/iik25wqIuFo"><img src="twitter.png" alt="Twitter"
+                                        title="Twitter"></a>
+                                <a href="https://youtu.be/iik25wqIuFo"><img src="instagram.png"
+                                        alt="Instagram" title="Instagram"></a>
+                                <a href="https://discord.gg/RV6xu6rZ"><img src="discord.png" alt="Discord"
+                                        title="Discord"></a>
+                                <a href="https://www.twitch.tv/echanqwq"><img src="twitch.png" alt="Twitch"
+                                        title="Twitch"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="assets/js/about.js"></script> 
+        <script src="assets/js/index.js"></script> 
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="copyright">
+                    <p class="text-light">&copy; 2023 Kodego WD83P. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <p id="location"></p>
+    </footer>
+    <!-- end of foots -->
+</body>
+</html>

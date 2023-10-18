@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGEZ! Gaming Hub</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-lg-top">
+        <div class="container-fluid">
+            <img src="logo.png" width="50px">
+            <a class="nav-link link-info" href="about.html"><h5>GGEZ! Gaming Hub</h5></a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-dark"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- <div class="hori-selector"><div class="left"></div><div class="right"></div></div> -->
+                <li class="nav-item">
+                    <a class="nav-link link-info" href="index.html"><i class="fas fa-home "></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-info" href="about.html"><i class="fa fa-info-circle "></i>About Us</a>
+                </li>
+                <li class="nav-item nav_item">
+                  <a class="nav-link link-info" aria-current="page" href="myorder.html">My Order</a>
+                </li>
+                <li class="nav-item nav_item">
+                  <a class="nav-link link-info" aria-current="page" href="catalogue.html">Shop</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse right" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto">
+                    <div class="search-con">
+                        <input type="search" class="form-control search" id="search" name="search"
+                            placeholder="Search...">
+                    </div>
+                </div>
+            </ul>
+             
+            <ul class="navbar-nav">
+                <li class="nav-item nav_item text-light me-sm-3"><a class="nav-item"><i class="fa-solid fa-user loginBtn" onclick="loginBtn()"></i></a><span id="loginName"></span></li>
+                <li class="nav-item nav_item text-light me-sm-3 text-decoration-none"><a href="checkout.html" class="nav-item text-light me-sm-3 text-decoration-none"><i class="fa-solid fa-cart-shopping cartBtn text-primary"></i><span id="quantity">0</span></i></a></li>
+                <li class="nav-item nav_item "><i class="fa fa-log"></i><span id="logoutBtn"></span></li>
+             </ul>
+        </div>
+        </div>
+    </nav>
+    <section class="hero" style="margin-top: 10px;">
+        <img src="images/TakeTwo_ECOM-SLIDING-BANNER_1200x.webp" class="img-fluid w-100 " style="object-position: center; border-image: stretch;">
+    </section>
+
+    <div class="container-fluid mb-4 ">
+        <!-- <div id="logo"><center><img src="logo.png" alt="logoimg" style="height: 500px;"></center></div> -->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-12 m-auto mt-5 text-center">
+                <h2 class="fw-bold text-light"> About Us </h2> 
+                <p class="text-light justify-content-evenly fs-5">Welcome to GGEZ! Gaming Hub, where the pixelated realms come alive and friendships are forged through shared passions! We are more than just a gaming community - we are a gathering of gamers who have come together to celebrate the
+                    art, thrill, and camaraderie of gaming.</p> </div>
+                 <br>
+                 
+                  <div class="row">
+                    <div class="col-md-10 col-12 m-auto mt-5 mb-5 text-center">
+                      <h2 class="fw-bold text-light"> Our Story</h2> 
+                      <p class="text-light justify-content-evenly fs-5">This webpage started off a mini project for a bootcamp but
+                        it has now became a dream for all my fellow gamers. </p> 
+                  </div>
+                </div>
+              
+                  <br>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 col-12 m-auto mt-5 text-center">
+                      <h3 class="fw-bold text-light"> Our Mission</h3> 
+                      <p class="text-light justify-content-end fs-5">Four mission is to enhance the gaming journey
+                        for enthusiasts across the globe. We're dedicated to creating an immersive and
+                        supportive platform where gamers of all kinds can come together to share their passion,
+                        knowledge, and excitement for the virtual realms they explore. Through engaging discussions,
+                        collaborative events, and valuable resources, we aim to elevate the way gamers connect, learn, and
+                        grow.</p> </div>
+                      <div class="col-md-6 start-end p-4"> 
+                        <img src="computer.jpg" class="w-100" style="height:350px; width: 500px; border-radius: 20px; box-shadow: 5px black;">
+                        </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6 start-end p-4"> 
+                      <img src="gaming-pictures.jpg" class="w-100" style="border-radius: 20px; box-shadow: 5px black;">
+                      </div>
+                      <div class="col-md-6 col-12 m-auto mt-5 text-center">
+                        <h3 class="fw-bold text-light">  Our Vision </h3> 
+                        <p class="text-light justify-content-end fs-5">We envision a gaming community where every
+                            member feels like part of an extended gaming family, where they can share their knowledge,
+                            celebrate their victories, and support each other through challenges. We are committed to
+                            offering a wide range of resources, from expert gaming tips and strategies to in-depth
+                            discussions on gaming culture and industry trends.</p> </div>
+                        
+          </center>
+          </div>
+          </div>
+        </div>
+        </div>
+        <hr class="text-bg-danger">
+        
+    
+        <!-- owner -->
+    <div class="container-fluid text-center">
+        <h1 class="fw-bolder text-light" >Meet the Team</h1>
+        <div class="container">
+    <section id="owner" class="owner-section-padding">
+        <div class="container" style="border-radius: 5px;">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="images/male-avatar-boy-face-man-user-5.svg" alt="" class="img-fluid p-5" >
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 p-5">
+                    <div class="about-text2">
+                        
+                        <br>
+                        <h3 class="text-start">Jon Aguirre</h3>
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam quae quaerat minus,
+                            facilis
+                            porro inventore? Consequuntur sequi quaerat odit tenetur quos earum, ipsam perferendis
+                            aliquam, et culpa,
+                            consequatur atque.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    <br>
+    <div class="container">
+    <section id="owner" class="owner-section-padding">
+        <div class="container" style="border-radius: 5px;">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5 p-5">
+                    <div class="about-text2">
+                        <br>
+                        <h3 class="text-start">Emilie Sumallo</h3>
+                        <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam quae quaerat minus,
+                            facilis
+                            porro inventore? Consequuntur sequi quaerat odit tenetur quos earum, ipsam perferendis
+                            aliquam, et culpa,
+                            consequatur atque.</p>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="images/female-avatar-girl-face-woman-user-2.svg" alt="" class="img-fluid p-5">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+    </section>
+          </center>
+            
+            
+            <!-- footer -->
+            <footer class="unique-footer">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-12">
+                                    <img src="logo.png" style="height: 250px;">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-12">
+                                    <h3 class="text-light"><label>About Us</label></h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="contact-info text-light">
+                                        <p>Email: jonservices17@email.com </p>
+                                        <p>Email 2: semilieann@email.com </p>
+                                        <p>Phone: (123) 456-7890</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-12">
+                                    <h3 class="text-light"><label>Community</label></h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="community-links text-light">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><label>Home</label></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><label>Game Invites</label></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><label>Events</label></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><label>Services</label></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><label>Channel</label></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-12">
+                                    <h3 class="text-light"><label>Links</label></h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="social-links text-light">
+                                        <a href="https://youtu.be/iik25wqIuFo"><img src="facebook.png"
+                                                alt="Facebook" title="Facebook"></a>
+                                        <a href="https://youtu.be/iik25wqIuFo"><img src="twitter.png" alt="Twitter"
+                                                title="Twitter"></a>
+                                        <a href="https://youtu.be/iik25wqIuFo"><img src="instagram.png"
+                                                alt="Instagram" title="Instagram"></a>
+                                        <a href="https://discord.gg/RV6xu6rZ"><img src="discord.png" alt="Discord"
+                                                title="Discord"></a>
+                                        <a href="https://www.twitch.tv/echanqwq"><img src="twitch.png" alt="Twitch"
+                                                title="Twitch"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="about.js"></script> 
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="copyright">
+                            <p class="text-light">&copy; 2023 Kodego WD83P. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end of foots -->
+
+        <script src="assets/js/about.js"></script>
+        <script src="assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GGEZ! Gaming Hub </title>
+        <link rel="icon" type="image" href="logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
+        <link rel="stylesheet" href="css/checkout.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-lg-top">
+            <div class="container-fluid">
+                <a href="catalogue.html"><img src="logo.png" width="50px"></a>
+                
+    
+</div>
+</nav>
+
+          <!-- start of payment and shipping method -->
+
+          <div class="container  mt-5">
+              
+                  <h2 class="text-center text-decoration-none text-light fw-bolder"> GGEZ! Gaming Hub - CheckOut Form</h2>
+              
+          </div>
+          <div class="container bg-primary-subtle checkout_container text-dark rounded-3 shadow-lg" style="border-style: dotted; border-color: black; border:3px">
+            
+                  <div class="row">
+                      <div class="col-sm-12 col-lg-8">
+                          <h2 class="text-start">Personal Information</h2>
+                          <hr>
+                          <div class="row">
+                              <!-- contains input for name, address, number, birthdate -->
+
+                              <label for="firstname" class="col-sm-3 col-lg-2 mb-3">First Name:</label>
+                              <input type="text" name="firstname" id="firstname" class="col-sm-9 col-lg-4 mb-3 rounded-2"
+                                  placeholder="Input your Firstname*" required>
+
+                              <label for="lastname" class="col-sm-3 col-lg-2 mb-3">Last Name:</label>
+                              <input type="text" name="lastname" id="lastname" class="col-sm-9 col-lg-4 mb-3 rounded-2"
+                                  placeholder="Input your Lastname*" required>
+
+                              <label for="mobilenum" class="col-sm-3 col-lg-2 mb-3">Mobile Number:</label>
+                              <input type="text" name="mobilenum" id="mobilenum" class="col-sm-9 col-lg-4 mb-3 rounded-2"
+                                  placeholder="ex. 09xx-xxx-xxxx*" maxlength="11" required>
+
+                              <label for="date" class="col-sm-3 col-lg-2 mb-3">Birthdate:</label>
+                              <input type="date" name="date" id="date" class="col-sm-9 col-lg-4 mb-3 rounded-2" required>
+
+                              <label for="address" class="col-sm-3 col-lg-2 mb-3">Address:</label>
+                              <input type="text" name="address" id="address" class="col-sm-9 col-lg-10 mb-3 rounded-2"
+                                  placeholder="Unit no./House no./Street/Barangay*" required>
+
+                              <label for="city" class="col-sm-3 col-lg-2 mb-3">City:</label>
+                              <input type="text" name="city" id="city" class="col-sm-9 col-lg-4 mb-3 rounded-2"
+                                  placeholder="Input your Municipality*" required>
+
+                              <label for="province" class="col-sm-3 col-lg-2 mb-3">Province:</label>
+                              <input type="text" name="province" id="province" class="col-sm-9 col-lg-4 mb-3 rounded-2"
+                                  placeholder="Input your Province*" required>
+                          </div>
+                          <hr>
+                          <h2 class="text-start">Shipping and Payment Method</h2>
+                          <hr>
+                          <!-- start of radio button for shipping methods -->
+                          <h6>Choose your Courier</h6>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input lbc" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                  value="option1">
+                              <label class="form-check-label" for="inlineRadio1">LBC Express Inc.</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input jt" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                  value="option2">
+                              <label class="form-check-label" for="inlineRadio2">J&T Express</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input lalamove" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                  value="option3">
+                              <label class="form-check-label" for="inlineRadio3">Lalamove (Sameday Delivery)</label>
+                          </div>
+                          <br>
+
+                          <!-- start of radio button for payment method options -->
+                          <h6 style="margin-top: 20px;">Choose your Payment Method</h6>
+                          <div class="form-check ">
+                              <input class="form-check-input debitCredit rounded-2" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                  Debit/Credit Card
+                              </label>
+                              <br>
+                              <input type="text" name="cardnum" id="cardnum" class="col-sm-12 col-lg-5 mb-3 rounded-2 "
+                                  placeholder="Type your cardnumber here*">
+                              <input type="text" name="expdate" id="expdate" class="col-sm-12 col-lg-3 mb-3 rounded-2"
+                                  placeholder="Expiry Date* (MM/YYYY)">
+                              <input type="text" name="cvv" id="cvv" class="col-sm-12 col-lg-3 mb-3 rounded-2" placeholder="CVV*">
+                          </div>
+                          <div class="form-check mb-3">
+                              <input class="form-check-input paypal" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2">
+                              <label class="form-check-label" for="flexRadioDefault2">
+                                  Paypal
+                              </label>
+                          </div>
+                          <div class="form-check mb-3">
+                              <input class="form-check-input ewallet" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault3">
+                              <label class="form-check-label" for="flexRadioDefault3">
+                                  E-wallet (Gcash/Maya)
+                              </label>
+                          </div>
+                          <div class="form-check mb-3">
+                              <input class="form-check-input cod" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault4">
+                              <label class="form-check-label" for="flexRadioDefault4">
+                                  Cash on Delivery
+                              </label>
+                          </div>
+                          <hr>
+                      </div>
+                      <div class="col-sm-12 col-lg-4">
+                          <div class="row mb-4">
+                              <h2 class="col-9 fw-semibold">Items in Cart</h2>
+                              <a href="checkout.html" class="text-end col-3 edit_btn text-danger text-decoration-none">Edit</a>
+                          </div>
+
+
+                          <div class="row">
+                              <div class="col-8 fw-medium pb-3">Subtotal:</div>
+                              <div id="totalPrice" class="col-4 fw-medium text-end"></div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-8 fw-medium pb-3">Estimated Shipping Fee:</div>
+                              <div id="totalShipping" class="col-4 fw-medium text-end"></div>
+                          </div>
+
+                          <div class="row">
+                              <div class="col-8 fw-medium pb-3">Value Added Tax:</div>
+                              <div id="totalVat" class="col-4 fw-medium text-end"></div>
+                          </div>
+                          <hr>
+                          <div class="row">
+                              <div class="col-8 fw-medium pb-3">Total:</div>
+                              <div id="sumOfall" class="col-4 fw-medium text-end"></div>
+                          </div>
+                          <hr>
+                          <div id="arrivalDate">
+                              <!-- contains date of arrival -->
+                          </div>
+
+                          <div id="cartItem" class="row">
+                              <!-- contains list of added items -->
+                          </div>
+                          <button data-toggle="modal" data-target="#myModal" class="btn btn-success btn-outline-dark w-50 mb-3 text-center" id="proceed" onclick="initialize()">Proceed
+                                  Payment</button>
+                                  <div class="modal" tabindex="-1" id="myModal">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title">Thank you for your Purchase!</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                          <p>You may track your order's status at <a>My Order</a> page.</p>
+                                          <p>If you have any concerns/questions regarding your order, you can email us at inquiries@ggezgaminghub.com.ph</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="closeModal()">Close</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>       
+                      </div>
+                  </div>
+              
+          </div>
+          
+    
+
+    <script src="assets/js/payment.js"></script>
+</body>
+</html>

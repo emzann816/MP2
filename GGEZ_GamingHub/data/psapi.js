@@ -3,7 +3,7 @@
         "product" : "PS5 Console with 2 Two DualSense Controller ",
         "price" : "32999",
         "category" : "Playstation5",
-        "img" : "../images/shopping.webp",
+        "img" : "../images/ps5_1.jpg",
         "previous" : "34499",  
         "save" : "2500"   },
     

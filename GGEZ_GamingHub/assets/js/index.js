@@ -58,8 +58,8 @@ function logout(){
 
     if(user){
         logoutBtn = `<!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" style="font-size:12px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-sign-out">
-        </i> Log off
+        <button type="button" class="btn btn-primary" style="font-size:12px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         Log off <i class="fa fa-sign-out"></i>
         </button>
       
         <!-- Modal -->
@@ -87,6 +87,7 @@ function proceedLogout(){
     localStorage.removeItem("order");
     sessionStorage.removeItem("login");
     window.location.href = "index.html";
+    logout();
 }
 
 function getLocation(){
@@ -97,43 +98,6 @@ function showPosition(position){
     let x = document.getElementById("location");
     x.innerHTML = `Latitude: ${position.coords.latitude} Longitude: ${position.coords.longitude}`;
 }
-
-
-// search-box open close js code
-// let navbar = document.querySelector(".navbar");
-// let searchBox = document.querySelector(".search-box .bx-search");
-// // let searchBoxCancel = document.querySelector(".search-box .bx-x");
-
-// searchBox.addEventListener("click", ()=>{
-//   navbar.classList.toggle("showInput");
-//   if(navbar.classList.contains("showInput")){
-//     searchBox.classList.replace("bx-search" ,"bx-x");
-//   }else {
-//     searchBox.classList.replace("bx-x" ,"bx-search");
-//   }
-// });
-
-// // sidebar open close js code
-// let navLinks = document.querySelector(".nav-links");
-// let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-// let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-// menuOpenBtn.onclick = function() {
-// navLinks.style.left = "0";
-// }
-// menuCloseBtn.onclick = function() {
-// navLinks.style.left = "-100%";
-// }
-
-
-// // sidebar submenu open close js code
-// let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-// htmlcssArrow.onclick = function() {
-//  navLinks.classList.toggle("show1");
-// }
-// let moreArrow = document.querySelector(".more-arrow");
-// moreArrow.onclick = function() {
-//  navLinks.classList.toggle("show2");
-// }
 
 user();
 selectCategory();

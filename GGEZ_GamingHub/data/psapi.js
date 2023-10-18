@@ -8,12 +8,12 @@
         "save" : "2500"   },
     
     {   "id" : "2" ,
-        "product" : "Hard Disk Drive",
-        "price" : "1999",
+        "product" : "PS5 Console",
+        "price" : "32999",
         "category" : "Playstation5",
-        "img" : "hdd.jpg", 
-        "previous" : "2449",
-        "save" : "450"    },
+        "img" : "images/ps5_1.jpg", 
+        "previous" : "34499",
+        "save" : "2500"    },
     
     {   "id" : "3" ,
         "product" : "Hard Disk Drive",

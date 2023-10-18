@@ -38,24 +38,62 @@
 
   
     <center>
-      <div class="loginContainer container">
           <header>
-            <img src="logo.png" width="80px">
-            <h4 id="title" class="fw-bolder text-light">GGEZ! Gaming Hub</h4>
+            <img src="logo.png" width="100px">
+            <h4 id="title" class="fw-bold text-light" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-variant-caps: all-petite-caps; font-size: xx-large;">GGEZ! Gaming Hub</h4>
 
           </header>
-          <div class="container">
-            
-              <h5 class="label">Log-In</h5>
-      
-                  <label for="username" class="font"><i class="fa-solid fa-user"></i></label>
-                  <input autocomplete="off" type="text" name="username" class="input_box" id="username" placeholder="Input your Username Here*" required>
-                  <br>
-                  <label for="password" class="font"><i class="fa-solid fa-lock"></i></label>
-                  <input type="password" name="password" id="password" class="input_box" placeholder="Input your Password Here (atleast 10 characters)*" required>
-                  <br>
-                  <p id="register" class="display-6 text-center">Don't Have an Account Yet? <a href="" id="register2" class="text-center text-primary text-decoration-none">Register Here</a></p>
-                  <button type="submit" class="button" onclick="login()">LogIn</button>
+          <div class="wrapper">
+            <div class="form-box login">
+                <h3 style="font-variant-caps: all-petite-caps; font-size: xx-large;">Login</h3>
+                <div id="loginError"></div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user" style="color:black;"></i></span>
+                    <input type="text" name="username" id="log_username">
+                    <label style="font-variant-caps: all-petite-caps; font-size: large;">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock" style="color: black;"></i></span>
+                    <input type="password" name="password" id="log_password">
+                    <label style="font-variant-caps: all-petite-caps; font-size: large;">Password</label>
+                </div>
+                <div class="remember1">
+                    <label style="font-family: monospace;"><input type="checkbox" >Remember Me</label>
+                    <a href="#" class="forgot text-info-emphasis text-decoration-none fw-bold" style="font-family: monospace;">Forgot Password?</a>
+                </div>
+                <button class="button" onclick="loginUser()">Login</button>
+                <div class="registerhere">
+                    <p class="text-light text-decoration-none fw-bold" style="font-family: monospace;">Don't have an account? <a href="#" class="reglink text-primary text-decoration-none fw-bold" style="font-family: monospace;">Register Here</a></p>
+                </div>
+            </div>
+
+            <div class="form-box register mt-3">
+                <h2 style="font-variant-caps: all-petite-caps; font-size: xx-large;">Register</h2>
+                <div id="registerError"></div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope" style="color: black"></i></span>
+                    <input type="email" name="email" id="email" autocomplete="off">
+                    <label style="font-variant-caps: all-petite-caps; font-size: large; ">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user" style="color: black;"></i></span>
+                    <input type="text" name="username" id="reg_username">
+                    <label style="font-variant-caps: all-petite-caps; font-size: large; ">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock" style="color: black;"></i></span>
+                    <input type="password" name="password" id="reg_password">
+                    <label style="font-variant-caps: all-petite-caps; font-size: large;">Password</label>
+                </div>
+                <div class="remember2">
+                    <label><input type="checkbox" class="terms" class="text-light text-decoration-none fw-bold" style="font-family: monospace;"> I agree to terms & conditions.</label>
+                </div>
+                <button class="button" onclick="registerUser()" class="text-light text-decoration-none fw-bold" style="font-family: monospace;">Register</button>
+                <div class="registerhere">
+                    <p class="text-light text-decoration-none fw-bold" style="font-family: monospace;">Already have an account? <a href="#" class="loglink text-primary text-decoration-none fw-bold" style="font-family: monospace;">Login now</a></p>
+                </div>
+            </div>
+       </div>
           
           </div>
 

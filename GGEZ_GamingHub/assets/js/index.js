@@ -5,13 +5,13 @@ function user(){
     if(name) {
         name.forEach(
             (username) => {
-                startName = ` Hi ${username.email}`;
+                startName = ` Hi ${username.username}`;
             }
         )
     }
-
     userName.innerText = startName;   
 }
+
 
 function selectCategory() {
     let categories = document.querySelectorAll(".category");
@@ -57,37 +57,55 @@ function logout(){
     let logoutBtn = "";
 
     if(user){
-        logoutBtn = `<!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" style="font-size:12px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-         Log off <i class="fa fa-sign-out"></i>
-        </button>
-      
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">LOGOFF?</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                Are you sure, you want to Log-out?
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="proceedLogout()">Confirm</button>
-              </div>
-            </div>
-          </div>
-        </div>`;
-        btn.innerHTML = logoutBtn;
+        logoutBtn = `  
+<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"> Log-out </button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Logging-Out</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p> Are you sure, you want to Log-out?</p>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-primary" onclick="proceedLogout()" data-bs-dismiss="modal">Proceed Log-out</button>
+      </div>
+    </div>
+    
+  </div>
+</div>`;
+            btn.innerHTML = logoutBtn;
     }
+    
 }
+
+function showModal() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = 'block';
+  }
+  
+  function closeModal() {
+    let itemArray = JSON.parse(localStorage.getItem("order"));
+    let orderList = itemArray;
+  
+    localStorage.setItem("listofOrder", JSON.stringify(orderList));
+    localStorage.removeItem("order");
+    window.location.href = "index.html";
+  }
+  
+  
 
 function proceedLogout(){
     localStorage.removeItem("order");
     sessionStorage.removeItem("login");
     window.location.href = "index.html";
-    logout();
+    
 }
 
 function getLocation(){
@@ -98,6 +116,43 @@ function showPosition(position){
     let x = document.getElementById("location");
     x.innerHTML = `Latitude: ${position.coords.latitude} Longitude: ${position.coords.longitude}`;
 }
+
+
+// search-box open close js code
+// let navbar = document.querySelector(".navbar");
+// let searchBox = document.querySelector(".search-box .bx-search");
+// // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+// searchBox.addEventListener("click", ()=>{
+//   navbar.classList.toggle("showInput");
+//   if(navbar.classList.contains("showInput")){
+//     searchBox.classList.replace("bx-search" ,"bx-x");
+//   }else {
+//     searchBox.classList.replace("bx-x" ,"bx-search");
+//   }
+// });
+
+// // sidebar open close js code
+// let navLinks = document.querySelector(".nav-links");
+// let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+// let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+// menuOpenBtn.onclick = function() {
+// navLinks.style.left = "0";
+// }
+// menuCloseBtn.onclick = function() {
+// navLinks.style.left = "-100%";
+// }
+
+
+// // sidebar submenu open close js code
+// let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+// htmlcssArrow.onclick = function() {
+//  navLinks.classList.toggle("show1");
+// }
+// let moreArrow = document.querySelector(".more-arrow");
+// moreArrow.onclick = function() {
+//  navLinks.classList.toggle("show2");
+// }
 
 user();
 selectCategory();

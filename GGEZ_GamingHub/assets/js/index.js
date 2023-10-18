@@ -74,7 +74,7 @@ function logout(){
                 Are you sure, you want to Log-out?
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="proceedLogout()">Proceed Log-out</button>
+                <button type="button" class="btn btn-primary" onclick="proceedLogout()">Confirm</button>
               </div>
             </div>
           </div>

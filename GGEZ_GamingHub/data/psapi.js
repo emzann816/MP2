@@ -1,6 +1,6 @@
 [
     {   "id" : "1" ,
-        "product" : "PS5 Console Controller",
+        "product" : "PS5 Console",
         "price" : "32999",
         "category" : "Playstation5",
         "img" : "images/ps5_1.jpg",

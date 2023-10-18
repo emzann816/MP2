@@ -33,138 +33,102 @@ body{
     height: 550px;
     color: aliceblue;
 }
+body{
 
-#title{
-    font-family: 'Blanka', sans-serif;
-    color: rgb(0, 0, 0);
-    margin-bottom: 50px;
-}
-
-
-.label{
-    font-weight: bold;
-    color: white;
-    margin-bottom: 15px;
-}
-
-.font{
-    color: white;
-    font-size: 25pt;
-    margin-bottom: 25px;
-}
-
-.wrapper{
-    position: relative;
-    width: 420px;
-    height: 470px;
-    background: linear-gradient(to bottom, white,transparent);
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: #000;
+  }
+  
+  
+  .card{
+  
+    width: 400px;
+    border:black;
+    border-width: 5px;
+    box-shadow: #000;
+    background: linear-gradient(to bottom, white, transparent, white);
     border-radius: 10px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: height .4s ease;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  
+  }
+  
+  
+  
+  
+  .btr{
+  
+    border-top-right-radius: 5px !important;
+  }
+  
+  
+  .btl{
+  
+    border-top-left-radius: 5px !important;
+  }
+  
+  .btn-dark {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+  }
+  
+  
+  .btn-dark:hover {
+      color: #fff;
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+  }
+  
+  
+  .nav-pills{
+  
+    display:table !important;
+    width:100%;
+  }
+  
+  .nav-pills .nav-link {
+      border-radius: 0px;
+          border-bottom: 1px solid #0d6efd40;
+  
+  }
+  
+  .nav-item{
+        display: table-cell;
+         background: #0d6efd2e;
+         color: black;
+  }
+  
+  
+  .form{
+  
+    padding: 10px;
+        height: 350px;
+  }
+  
+  .form input{
+  
+    margin-bottom: 12px;
+    border-radius: 3px;
+  }
+  
+  
+  .form input:focus{
+  
+    box-shadow: none;
+  }
+  
+  
+  .form button{
+  
+    margin-top: 20px;
+  }
 
-.wrapper.active {
-    height: 480px;
-}
-
-.form_box {
-    width: 420px;
-    height: 470px;
-    background: linear-gradient(to bottom, white,transparent);
-}
-
-.wrapper .form-box{
-    width: 100%;
-    padding: 40px;
-}
-
-.wrapper .form-box.login{
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
-
-.wrapper.active .form-box.login{
-    transition: none;
-    transform: translateX(-400px);
-}
-
-.wrapper .form-box.register{
-    position: absolute;
-    transform: translateX(400px);
-    
-}
-
-.wrapper.active .form-box.register{
-    transition: transform .18s ease;
-    transform: translateX(0);
-}
-
-.form-box h2{
-    font-size: 2em;
-    color: #162938;
-    text-align: center;
-    font-weight: 700;
-}
-
-.input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #162938;
-    margin: 30px 0;
-}
-
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.input-box input:focus~label,
-.input-box input:valid~label{
-    top: -5px;
-}
-
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #162938;
-    font-weight: 600;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon{
-    position: absolute;
-    right: 8px;
-    font-size: 1.2em;
-    color: #162938;
-    line-height: 57px;
-}
-
-.remember1{
+  .remember1{
     font-size: .9em;
     color: #162938;
     font-weight: 500;
     margin: -15px 0 15px ;
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .remember1 label input{
@@ -184,57 +148,4 @@ body{
 .remember2 label input{
     accent-color: #162938;
     margin-right: 3px;
-}
-
-.forgot{
-    color: rgb(0, 0, 0);
-    transition: 0.3s ease;
-}
-
-.forgot:hover{
-    color: rgb(0, 0, 0, 0.5);
-}
-
-.button{
-    width: 100px;
-    height: 45px;
-    background: #162938;
-    border: none;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.button:hover{
-    background: #162938ab;
-}
-
-.registerhere{
-    font-size: 0.9em;
-    color: #162938;
-    text-align: center;
-    font-weight: 500;
-    margin: 25px 0 10px;
-}
-
-.reglink{
-    color: rgb(0, 0, 0);
-    transition: 0.3s ease;
-}
-
-.reglink:hover{
-    color: rgb(0, 0, 0, 0.5);
-}
-
-.loglink{
-    color: rgb(0, 0, 0);
-    transition: 0.3s ease;
-}
-
-.loglink:hover{
-    color: rgb(0, 0, 0, 0.5);
 }

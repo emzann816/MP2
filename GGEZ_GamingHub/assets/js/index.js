@@ -61,26 +61,26 @@ function logout(){
         <button type="button" class="btn btn-primary" style="font-size:12px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-sign-out">
         </i> Log off
         </button>
-        
+      
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">LOG-OUT?</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              You are about to Logoff...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" onclick="proceedLogout()">Confirm</button>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">LOGOFF?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Are you sure, you want to Log-out?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="proceedLogout()">Proceed Log-out</button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>`;
-      btn.innerHTML = logoutBtn;
-  }
+        </div>`;
+        btn.innerHTML = logoutBtn;
+    }
 }
 
 function proceedLogout(){

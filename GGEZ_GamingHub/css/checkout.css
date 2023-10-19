@@ -17,7 +17,7 @@ body{
     font-size: 24px;
 }
 
-.nav_item{
+.nav_item1{
     margin-left: 30px;
     font-size: 18px;
 }
@@ -193,7 +193,7 @@ footer .payment i{
 
 @media (max-width:1024px){
 
-    .nav-item {
+    .nav-item1 {
         margin-bottom: 15px;
     }
 
@@ -208,7 +208,7 @@ footer .payment i{
         margin-left: 0; 
     }
 
-    .nav-item {
+    .nav-item1 {
         margin-bottom: 15px;
     }
 
@@ -315,7 +315,7 @@ footer .payment i{
   
   }
   
-  .nav-item{
+  .nav-item1{
         display: table-cell;
          
          color: black;

@@ -105,8 +105,7 @@ function initialize() {
                         </div>
                         </form>
              </div>
-            <justify><p style="font-size:12px;" class="text-start mx-2"><b>Please Note:</b> Due to limited supply, al stock is sold on first-come first-serve basis. Auto notify does not guarantee or price. All prices are subject to change without notice.</p> </justify>
-             <div class="modal-footer" id="exampleModal_notify">
+            <p style="font-size:12px;" class="text-start mx-3"><b>Please Note:</b> Due to limited supply, al stock is sold on first-come first-serve basis. Auto notify does not guarantee or price. All prices are subject to change without notice.</p>
 
              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
              </div>

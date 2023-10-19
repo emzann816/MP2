@@ -24,7 +24,7 @@
         "save" : "450"    },
     
     {   "id" : "4" ,
-        "product" : "Hard Disk Drive",
+        "product" : "PacMan Game",
         "price" : "1999",
         "category" : "Playstation5",
         "img" : "images/71QNKaaHSnL._SX385_.jpg",
@@ -40,7 +40,7 @@
         "save" : "450"   },
     
         {   "id" : "6" ,
-        "product" : "Hard Disk Drive",
+        "product" : "Sonic Game",
         "price" : "1999",
         "category" : "Playstation5",
         "img" : "images/811e4KuptRL._SX385_.jpg",

@@ -346,10 +346,7 @@ h1 h2 h3 h4 h5 p {
     text-decoration: none;
 }
 
-.unique-footer .footer-content .community-links ul li a:hover {
-    color: gray;
-    background-color: aliceblue;
-}
+
 /* .card {
     height: 500px;
     width: 200px;

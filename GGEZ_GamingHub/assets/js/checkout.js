@@ -69,7 +69,7 @@ function del(id){
 
 
 function initialize() {
-    let url = `./checkoutItemapi.js`;
+    let url = `./data/checkoutItemapi.js`;
     fetch(url)
     .then(response => response.json())  //object fetching
     .then(result => {
@@ -77,7 +77,7 @@ function initialize() {
         let cards = "";
         let cardsArea = document.getElementById("cards");
         result.forEach((items, index) => {
-            cards += `<div class="card d-inline-flex w-100 h-100 text-center" style="width: 18rem;">
+            cards += `<div class="card d-inline-flex bg-light w-100 h-100 text-center" style="width: 18rem;">
                     <center><img src="${items.img}" id="image${items.id}" class="card-img-top mx-2" alt="${items.product}"></center>
                     <div class="card-body ">
                     <h5 class="card-title fs-6 fw-bolder" id="product${items.id}">${items.product}</h5>

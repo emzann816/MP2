@@ -24,19 +24,24 @@
               <link rel="preconnect" href="https://fonts.googleapis.com">
               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <script src="https://use.fontawesome.com/d2b46f845b.js"></script>
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/about.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/about.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     
     <body>
        
           <!-- Login form creation starts-->
-    
+          <nav class="navbar navbar-expand-lg sticky-lg-top" style="background-image: url(images/bg_img.jpg);">
+            <div class="container-fluid">
+                <a class="nav-link link-info" href="#"><img src="" width="50px"></a>
+            <a class="nav-link link-info m-1" style="font-size: 12;" href="index.html"><p> <i class="fa fa-sign-out"></i> BACK TO HOME </p></a>
+            </div>
+          </nav>
   
     <center>
           <header>
-            <img src="logo.png" width="100px">
+            <a href="index.html"><img src="logo.png" width="100px"></a>
             <h4 id="title" class="fw-bold text-light" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-variant-caps: all-petite-caps; font-size: xx-large;">GGEZ! Gaming Hub</h4>
           </header>
           <div class="d-flex justify-content-center align-items-center mt-5">
@@ -62,12 +67,12 @@
     
                         <input type="password" name="" class="form-control" placeholder="Password" id="log_password">
                         <div class="remember1 ">
-                    <label style="font-family: monospace;" class="text-start  text-dark mb-0"><input type="checkbox" >Remember Me</label>
-                    <a href="#" class="forgot text-dark text-decoration-none fw-bold" style="font-family: monospace;">Forgot Password?</a>
+                    <label style="font-family: monospace;" class="text-start  text-light mb-0"><input type="checkbox" >Remember Me</label>
+                    <a href="#" class="forgot text-info text-decoration-none fw-bold" style="font-family: monospace;">Forgot Password?</a>
                 </div>
                 <button class="btn btn-dark btn-block mt-1" onclick="loginUser()">Login</button>
                 <div class="registerhere">
-                    <p class="text-dark text-decoration-none pt-2 fw-bold" style="font-family: monospace;">Don't have an account? <a href="#" class="reglink text-primary text-decoration-none fw-bold" style="font-family: monospace;">Register Here</a></p>
+                    <p class="text-light text-decoration-none pt-2 fw-bold" style="font-family: monospace;">Don't have an account? <a href="#" class="reglink text-primary text-decoration-none fw-bold" style="font-family: monospace;">Register Here</a></p>
                 </div>
                       
                         
@@ -82,7 +87,7 @@
                       <div class="form px-4">
                         <div id="registerError"></div>
     
-                        <input type="text" name="" class="form-control mt-3" placeholder="Your Fullname" id="reg_name">
+                        <input type="text" name="" class="form-control mt-3" placeholder="Enter Your Fullname" id="reg_name">
     
                         <input type="email" name="" class="form-control" placeholder="Email" id="reg_email" aria-describeby="emailHelp">
     
@@ -90,7 +95,7 @@
     
                         <input type="password" name="" class="form-control" placeholder="Password" id="reg_password">
                         <div class="remember2 mt-2">
-                          <label><input type="checkbox" class="terms" class="text-light text-decoration-none fw-bold" style="font-family: monospace;"> I agree to terms & conditions.</label>
+                          <label class="text-light "><input type="checkbox" class="terms" class="text-light text-decoration-none fw-bold" style="font-family: monospace;"> I agree to terms & conditions.</label>
                         </div>
                         <button class="btn btn-dark btn-block" onclick="registerUser()">Signup</button>
                         

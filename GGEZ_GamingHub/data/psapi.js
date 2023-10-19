@@ -43,7 +43,7 @@
         "product" : "Hard Disk Drive",
         "price" : "1999",
         "category" : "Playstation5",
-        "img" : "hdd.jpg",
+        "img" : "images/811e4KuptRL._SX385_.jpg",
         "previous" : "2449",   
         "save" : "450"   },
     

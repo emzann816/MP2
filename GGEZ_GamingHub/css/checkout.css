@@ -26,9 +26,7 @@ body{
     color: rgb(15, 15, 15);
 }
 
-.nav-item a:hover{
-    font-weight: 400;
-}
+
 
 .form-control{
     margin-left: 30px;
@@ -62,12 +60,8 @@ body{
 }
 
 
-.checkout_container{
-    border: 1px solid rgba(202, 202, 202, 1);
-    margin-top: 75px;
-    margin-bottom: 150px;
-    padding: 40px;
-    border-radius: 10px;
+.check_container {
+    height: auto;
 }
 
 .category{
@@ -183,9 +177,7 @@ footer .payment i{
     padding-right: 4px;
 }
 
-.check_container {
-    background: linear-gradient(to bottom, white, transparent, white);
-}
+
 
 .copyright{
     text-align: center;
@@ -246,12 +238,7 @@ footer .payment i{
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'League Spartan', sans-serif;
-    background-color: rgba(255, 255, 255);
-    height: 100vh;
-    background-size: cover;
-}
+
 
 
 /* navbar styling */
@@ -273,6 +260,9 @@ body{
     color: aliceblue;
 }
 
+#container_checkout {
+    height: 1000px;
+}
   
   .card{
   
@@ -327,7 +317,7 @@ body{
   
   .nav-item{
         display: table-cell;
-         background: #0d6efd2e;
+         
          color: black;
   }
   
@@ -335,7 +325,7 @@ body{
   .form{
   
     padding: 10px;
-        height: 350px;
+        height: 500px;
   }
   
   .form input{

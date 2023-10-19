@@ -16,7 +16,7 @@
         "save" : "200"    },
     
     {   "id" : "3" ,
-        "product" : "Hard Disk Drive",
+        "product" : "Madden",
         "price" : "1999",
         "category" : "Playstation5",
         "img" : "images/61nbxA368iL.__AC_SX300_SY300_QL70_FMwebp_.webp",
@@ -27,7 +27,7 @@
         "product" : "Hard Disk Drive",
         "price" : "1999",
         "category" : "Playstation5",
-        "img" : "hdd.jpg",
+        "img" : "images/71QNKaaHSnL._SX385_.jpg",
         "previous" : "2449",  
         "save" : "450"   },
     

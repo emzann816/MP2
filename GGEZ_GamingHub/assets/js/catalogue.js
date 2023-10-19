@@ -53,7 +53,7 @@ function initialize() {
         let cardsArea = document.getElementById("cards");
         result.forEach((item, index) => {
             cards += `<div class="card d-inline-flex me-1 ms-1 mt-2 mb-2" style="width: 11rem; height: 22rem"><button class="btn btn-warning text-start" style="font-size:11px; width:110px;" id="price${item.id}"> Save ${formatCurrency(item.save, "php")}</button>
-                    <img src="${item.img}" id="image${item.id}" class="card-img-top mt-3" alt="${item.product}">
+                    <center><img src="${item.img}" id="image${item.id}" class="card-img-top mt-3" alt="${item.product}"></center>
                     <div class="card-body">
                     <h5 class="card-title fs-6 fw-bold align-content-center text-center" id="product${item.id}">${item.product}</h5>
                     <p class="card-text  my-1 "style="font-size:17px;" id="price${item.id}">${formatCurrency(item.price, "php")}</p>

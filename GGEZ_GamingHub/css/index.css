@@ -307,3 +307,8 @@ th {
         margin: 0;
     }
 }
+
+.fb-customerchat {
+    max-width: fit-content;
+
+}

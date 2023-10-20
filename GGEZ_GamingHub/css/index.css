@@ -309,6 +309,7 @@ th {
 }
 
 .fb-customerchat {
-    max-width: fit-content;
+    width: 250px;
+	height: 350px;
 
 }

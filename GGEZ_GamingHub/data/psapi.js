@@ -32,10 +32,10 @@
         "save" : "450"   },
     
     {   "id" : "5" ,
-        "product" : "Hard Disk Drive",
+        "product" : "SPIDER-MAN 2",
         "price" : "1999",
         "category" : "Playstation5",
-        "img" : "hdd.jpg", 
+        "img" : "https://m.media-amazon.com/images/I/51fHF3ISbsL._SX300_SY300_QL70_FMwebp_.jpg", 
         "previous" : "2449", 
         "save" : "450"   },
     
@@ -48,10 +48,10 @@
         "save" : "450"   },
     
     {   "id" : "7" ,
-        "product" : "Hard Disk Drive",
+        "product" : "Super Mario Bros.™",
         "price" : "1999",
         "category" : "Playstation5",
-        "img" : "hdd.jpg",
+        "img" : "https://m.media-amazon.com/images/I/91PED0k5yfL._SY445_.jpg",
         "previous" : "2449",  
         "save" : "450"   },
     

@@ -14,7 +14,7 @@
         "save" : "450"    },
     
     {   "id" : "3" ,
-        "product" : "AVWLCO Controller",
+        "product" : "Avwlo Controller",
         "price" : "1999",
         "category" : "Nintendo Switch",
         "img" : "https://m.media-amazon.com/images/I/61BbMSVLu6L._SX466_.jpg", 

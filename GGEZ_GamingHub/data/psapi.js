@@ -112,7 +112,7 @@
         "save" : "450"    },
     
         {   "id" : "15" ,
-        "product" : "Console Middle Skin",
+        "product" : "Console Middle",
         "price" : "1999",
         "category" : "Playstation5",
         "img" : "https://m.media-amazon.com/images/I/712xfBcZ4TL._AC_SX425_.jpg", 

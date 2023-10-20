@@ -18,8 +18,8 @@ body{
 }
 
 .nav_item1{
-    margin-left: 30px;
-    font-size: 18px;
+  
+    font-size: 15px;
 }
 
 .nav-item a{
@@ -28,13 +28,14 @@ body{
 
 
 
-.form-control{
+/* .form-control{
     margin-left: 30px;
-}
+} */
 
 .loginBtn{
     color: rgb(173, 173, 173);
     transition: 0.3s ease;
+    height: 15px;
 }
 
 .loginBtn:hover{
@@ -193,9 +194,9 @@ footer .payment i{
 
 @media (max-width:1024px){
 
-    .nav-item1 {
+    /* .nav-item1 {
         margin-bottom: 15px;
-    }
+    } */
 
     .fa-solid, .fas {
         margin-bottom: 25px;
@@ -260,9 +261,7 @@ footer .payment i{
     color: aliceblue;
 }
 
-#container_checkout {
-    height: 1000px;
-}
+
   
   .card{
   

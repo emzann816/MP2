@@ -112,10 +112,10 @@
         "save" : "450"    },
     
         {   "id" : "15" ,
-        "product" : "Hard Disk Drive",
+        "product" : "Iphone XR Case",
         "price" : "1999",
         "category" : "Iphones",
-        "img" : "hdd.jpg", 
+        "img" : "https://down-ph.img.susercontent.com/file/sg-11134201-23020-ya7liojerbnvcc", 
         "previous" : "2449",
         "save" : "450"    },
     

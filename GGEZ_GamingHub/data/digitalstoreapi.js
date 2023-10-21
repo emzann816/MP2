@@ -80,7 +80,7 @@
         "save" : "450"   },
     
         {   "id" : "11" ,
-        "product" : "Android Car Stereo",
+        "product" : "Android Stereo",
         "price" : "1999",
         "category" : "Digital Store",
         "img" : "https://down-ph.img.susercontent.com/file/ph-11134207-23010-ls7wtrkb28lv6f", 
@@ -88,7 +88,7 @@
         "save" : "450"    },
     
     {   "id" : "12" ,
-        "product" : "Android Car Stereo",
+        "product" : "Android Stereo",
         "price" : "1999",
         "category" : "Digital Store",
         "img" : "https://down-ph.img.susercontent.com/file/ph-11134207-7qul1-lg0jzwd82np437", 

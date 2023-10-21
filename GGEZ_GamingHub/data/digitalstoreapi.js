@@ -115,7 +115,7 @@
         "product" : "PS5 Digital Disc",
         "price" : "1999",
         "category" : "Digital Store",
-        "img" : "https://down-ph.img.susercontent.com/file/ph-50009109-7c55578bdaf2b1f16482d89425feb96b", 
+        "img" : "https://down-ph.img.susercontent.com/file/cn-11134207-7qukw-lk4wubjb6nj1ef", 
         "previous" : "2449",
         "save" : "450"    },
     

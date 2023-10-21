@@ -131,7 +131,7 @@
         "product" : "Apple Earphone",
         "price" : "1999",
         "category" : "Accessories",
-        "img" : "https://down-ph.img.susercontent.com/file/ph-50009109-7c55578bdaf2b1f16482d89425feb96b", 
+        "img" : "https://down-ph.img.susercontent.com/file/566a675d8b1eb33ed119e23903d3a533", 
         "previous" : "2449", 
         "save" : "450"   },
     
